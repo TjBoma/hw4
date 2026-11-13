@@ -208,7 +208,7 @@ void AVLTree<Key, Value>:: remove(const Key& key)
         nodeSwap(n, pred);
     }
  
-    // 3. Record parent and which side of it is losing height (before unlinking)
+    
     AVLNode<Key, Value>* p = n->getParent();
     int8_t diff = 0;
     if (p != nullptr) {
